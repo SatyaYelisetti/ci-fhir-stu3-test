@@ -1,0 +1,13 @@
+# FHIR IG Publisher local build directories #
+#############################################
+qa
+temp
+txCache
+
+# unnecessary build files #
+##################################
+ig.ini
+resources/ig-expansion-parameters.json
+resources/ig-new.json
+resources/ig-new.xml
+resources/ig-validation-parameters.json

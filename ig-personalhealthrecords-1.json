@@ -1,0 +1,78 @@
+{
+    "version": "3.0.1",
+    "paths": {
+        "output": "output/PersonalHealthRecords",
+        "pages": "pages/PersonalHealthRecords",
+        "resources": [
+            "resources",
+            "examples"
+        ],
+        "temp": "temp",
+        "qa": "qa",
+        "specification": "http://hl7.org/fhir/STU3/",
+        "txCache": "txCache"
+    },
+    "sct-edition": "http://snomed.info/sct/32506021000036107",
+    "extraTemplates": ["mappings"],
+    "do-transforms": "true",
+    "spreadsheets": [],
+    "source": "implementationguide-personalhealthrecords-1.xml",
+    "gen-examples": "true",
+    "npm-name" : "hl7.fhir.au.dh.personal-health-records",
+    "tool": "jekyll",
+    "license": "CC0-1.0",
+    "canonicalBase": "http://ns.electronichealth.net.au/ci/fhir/3.0",
+    "logging": [
+        "init",
+        "progress",
+        "context",
+        "html",
+        "tx"
+    ],
+    "dependencyList": [{
+        "name": "aubase",
+        "location": "http://hl7.org.au/fhir",
+        "version": "current"
+    },
+    {
+        "name": "profilelibrary",
+        "location": "http://ns.electronichealth.net.au/ci/fhir/3.0",
+        "package": "fhir.dh.pl",
+        "version": "dev"
+    }],
+    "defaults": {
+        "CapabilityStatement": {"template-base": "capst.html"},
+        "ValueSet": {"template-base": "vs.html"},
+        "Any": {
+            "template-base": "base.html",
+            "template-format": "format.html"
+        },
+        "StructureDefinition": {
+            "template-defns": "sd-definitions.html",
+            "template-base": "sd.html",
+            "template-mappings": "sd-mappings.html"
+        },
+        "StructureMap": {"template-base": "sm.html"},
+        "Basic": {"template-base": "ex.html"},
+        "CodeSystem": {"template-base": "codesys.html"},
+        "ConceptMap": {"template-base": "cm.html"},
+        "Composition": {
+            "template-base": "ex.html",
+            "template-format": "ex-format.html"
+        }
+    },
+    "resources": {
+        "StructureDefinition/composition-docheader-cei-1": {
+            "base": "StructureDefinition-composition-docheader-cei-1.html",
+            "defns": "StructureDefinition-composition-docheader-cei-1-definitions.html"
+        },
+        "StructureDefinition/composition-phn-1": {
+            "base": "StructureDefinition-composition-phn-1.html",
+            "defns": "StructureDefinition-composition-phn-1-definitions.html"
+        },
+        "StructureDefinition/composition-phs-1": {
+            "base": "StructureDefinition-composition-phs-1.html",
+            "defns": "StructureDefinition-composition-phs-1-definitions.html"
+        }
+    }
+}

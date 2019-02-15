@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="encounter-es-1" />
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/encounter-es-1" />
+  <version value="1.0.0" />
+  <name value="EncounterEventSummary" />
+  <title value="Summary of an Encounter for an Event" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="Australian Digital Health Agency" />
+  <contact>
+    <telecom>
+      <system value="email" />
+      <value value="help@digitalhealth.gov.au" />
+    </telecom>
+  </contact>
+  <description value="This profile provides a structure for an encounter between a patient and a healthcare provider." />
+  <copyright value="Copyright © 2018 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter">
+      <path value="Encounter" />
+    </element>
+    <element id="Encounter.meta">
+      <path value="Encounter.meta" />
+      <min value="1" />
+      <constraint>
+        <key value="inv-dh-enc-01" />
+        <severity value="error" />
+        <human value="One meta.profile shall be 'http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/encounter-es-1'" />
+        <expression value="meta.profile.where($this='http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/encounter-es-1').exists()" />
+      </constraint>
+    </element>
+    <element id="Encounter.meta.profile">
+      <path value="Encounter.meta.profile" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.extension:encounterDescription">
+      <path value="Encounter.extension" />
+      <sliceName value="encounterDescription" />
+      <short value="Encounter description" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org.au/fhir/StructureDefinition/encounter-description" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/patient-ident-1" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.reason">
+      <path value="Encounter.reason" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

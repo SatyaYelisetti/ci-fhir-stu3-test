@@ -1,0 +1,12 @@
+﻿{
+  "url": "http://ns.electronichealth.net.au/ci/fhir/3.0/ImplementationGuide/implementationguide-eventsummary-1",
+  "name": "ImplementationGuideEventSummary",
+  "package-id": "ns.electronichealth.net.au/ci/fhir/3.0/event-summary",
+  "ig-ver": "1.0.0",
+  "date": "Fri, 15 Feb, 2019 11:27:13 +1000",
+  "errs": 4,
+  "warnings": 0,
+  "hints": 0,
+  "version": "3.0.1",
+  "tool": "4.0.0 (3)"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="implementationguide-personalhealthrecords-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ImplementationGuidePersonalHealthRecords</h2><p>The official URL for this implementation guide is: </p><pre>http://ns.electronichealth.net.au/ci/fhir/3.0/ImplementationGuide/implementationguide-personalhealthrecords-1</pre><div><p>Australian realm implementation guide of the FHIR specification to represent Personal Health records in the My Health Record system and related applications.</p>
+</div></div>
+  </text>
+  <url value="http://ns.electronichealth.net.au/ci/fhir/3.0/ImplementationGuide/implementationguide-personalhealthrecords-1"/>
+  <version value="1.0.0"/>
+  <name value="ImplementationGuidePersonalHealthRecords"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <publisher value="Australian Digital Health Agency"/>
+  <contact>
+    <telecom>
+      <system value="email"/>
+      <value value="help@digitalhealth.gov.au"/>
+    </telecom>
+  </contact>
+  <description value="Australian realm implementation guide of the FHIR specification to represent Personal Health records in the My Health Record system and related applications."/>
+  <copyright value="Copyright &#xA9; 2019 Australian Digital Health Agency - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/."/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-docheader-cei-1.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Composition profile: Consumer Entered Information Document Header"/>
+      <sourceReference>
+        <reference value="StructureDefinition/composition-docheader-cei-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-phn-1.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Composition profile: Personal Health Notes"/>
+      <sourceReference>
+        <reference value="StructureDefinition/composition-phn-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-composition-phs-1.html"/>
+      </extension>
+      <example value="false"/>
+      <name value="Composition profile: Personal Health Summary"/>
+      <sourceReference>
+        <reference value="StructureDefinition/composition-phs-1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-composition-phn-example1.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Notes example 1"/>
+      <sourceReference>
+        <reference value="Composition/composition-phn-example1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-composition-phn-example2.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Notes example 2"/>
+      <sourceReference>
+        <reference value="Composition/composition-phn-example2"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-426e957a-3c4c-4780-98f3-8339cc1e6f7c.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Summary example 1"/>
+      <sourceReference>
+        <reference value="Composition/426e957a-3c4c-4780-98f3-8339cc1e6f7c"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-dc32838b-faf3-4102-9c78-27186ac32e20.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Summary example 2"/>
+      <sourceReference>
+        <reference value="Composition/dc32838b-faf3-4102-9c78-27186ac32e20"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-fb584f29-e4cc-4f55-ba2e-7bdf03c7a5ee.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Summary example 3"/>
+      <sourceReference>
+        <reference value="Composition/fb584f29-e4cc-4f55-ba2e-7bdf03c7a5ee"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-340fcbec-f501-4582-9be1-4627618119e3.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Summary example 4"/>
+      <sourceReference>
+        <reference value="Composition/340fcbec-f501-4582-9be1-4627618119e3"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Composition-28d02fcf-6b64-49c1-8870-6533059b8129.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="Personal Health Summary example 5"/>
+      <sourceReference>
+        <reference value="Composition/28d02fcf-6b64-49c1-8870-6533059b8129"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.html"/>
+    <title value="IG Templage Homepage"/>
+    <kind value="page"/>
+  </page>
+</ImplementationGuide>

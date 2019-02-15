@@ -1,0 +1,22 @@
+﻿ImplementationGuideEventSummary : Validation Results
+=========================================
+
+err = 4, warn = 0, info = 0
+Generated Fri Feb 15 11:28:09 AEST 2019. FHIR version 4.0.0 for 3.0.1
+
+ Build Errors : 7 / 0
+ C:\work\git\ci-fhir-stu3-test\resources\encounter-es-1 : 2 / 0
+ C:\work\git\ci-fhir-stu3-test\resources\implementationguide-eventsummary-1 : 0 / 0
+</table>
+== n/a ==
+ERROR: ??: The reference http://hl7.org.au/fhir/StructureDefinition/encounter-description could not be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 180, column 231: The link '' for "StructureDefinition.url" cannot be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 379, column 153: The link 'file:C:\work\git\Test-CI-FHIR-STU3\Profile-Library/StructureDefinition-patient-ident-1.html' for "PatientIdent" cannot be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 287, column 1428: The link 'file:C:\work\git\Test-CI-FHIR-STU3\Profile-Library/StructureDefinition-patient-ident-1.html' for "Patient with Mandatory Identifier" cannot be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 334, column 1615: The link 'file:C:\work\git\Test-CI-FHIR-STU3\Profile-Library/StructureDefinition-patient-ident-1.html' for "Patient with Mandatory Identifier" cannot be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 531, column 1428: The link 'file:C:\work\git\Test-CI-FHIR-STU3\Profile-Library/StructureDefinition-patient-ident-1.html' for "Patient with Mandatory Identifier" cannot be resolved
+ERROR: C:\work\git\ci-fhir-stu3-test\output\EventSummary\StructureDefinition-encounter-es-1.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 576, column 1615: The link 'file:C:\work\git\Test-CI-FHIR-STU3\Profile-Library/StructureDefinition-patient-ident-1.html' for "Patient with Mandatory Identifier" cannot be resolved
+== C:\work\git\ci-fhir-stu3-test\resources\encounter-es-1.xml ==
+ERROR: encounter-es-1: Unable to find Extension 'http://hl7.org.au/fhir/StructureDefinition/encounter-description' referenced at http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/encounter-es-1 differential Encounter.extension (encounterDescription)
+ERROR: encounter-es-1: Unable to find Extension 'http://hl7.org.au/fhir/StructureDefinition/encounter-description' referenced at http://ns.electronichealth.net.au/ci/fhir/3.0/StructureDefinition/encounter-es-1 snapshot Encounter.extension (encounterDescription)
+== C:\work\git\ci-fhir-stu3-test\resources\implementationguide-eventsummary-1.xml ==
